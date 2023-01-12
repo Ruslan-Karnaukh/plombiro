@@ -1,0 +1,43 @@
+.header {
+  position: relative;
+
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 308px;
+  }
+
+  &__button {
+    margin-left: auto;
+    width: 152px;
+    height: 42px;
+    @include font(600, 14px, 17px, null);
+    color: #000000;
+    background-color: var(--color-default);
+    border: none;
+    border-radius: 10px;
+  }
+
+  &__item {
+    margin-left: 4px;
+  }
+}
+
+.navigation {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+
+  &__link {
+    @include font(700, 16px, 20px, null);
+    color: var(--color-focus);
+    &--active {
+      color: var(--color-default);
+    }
+  }
+}
