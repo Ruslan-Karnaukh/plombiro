@@ -1,23 +1,21 @@
-.section{
-    padding: 60px 0; 
+.section {
+  padding: 60px 0;
 }
 
-.container{
+.container {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 15px;
 
-    overflow: hidden;
-    margin: 0 auto;
-    padding: 0 15px;
+  @include mobile {
+    width: 480px;
+  }
 
-    @media screen and (min-width: 1200px){
-        width: 1200px;
-    }
-    @media screen and (max-width: 1199px){
-        width: 768px;
-        }
-    @media screen and (max-width: 767px){
-        width: 480px;
-        }
-    @media screen and (max-width: 479px){
-        width: 320px;
-            }
+  @include tablet {
+    width: 768px;
+  }
+
+  @include desktop {
+    width: 1200px;
+  }
 }

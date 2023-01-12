@@ -1,0 +1,56 @@
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh / $fs;
+  letter-spacing: $ls;
+}
+
+@mixin flex-align() {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-align-justify() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin mobile() {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet-max() {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin desktop-max() {
+  @media screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin retina() {
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}
