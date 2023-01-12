@@ -7,17 +7,15 @@
   margin: 0 auto;
   padding: 0 15px;
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
-  @media screen and (max-width: 1199px) {
-    width: 768px;
-  }
-  @media screen and (max-width: 767px) {
+  @include mobile {
     width: 480px;
   }
-  @media screen and (max-width: 479px) {
-    width: 320px;
+
+  @include tablet {
+    width: 768px;
   }
 
+  @include desktop {
+    width: 1200px;
+  }
 }
