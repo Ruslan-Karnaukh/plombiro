@@ -1,0 +1,16 @@
+.button {
+  background-color: var(--color-default);
+  color: var(--color-text);
+  @include font(600, 14px, 18px, null);
+  border: none;
+  border-radius: 10px;
+  transition: background-color var(--cubic);
+  cursor: pointer;
+  &:hover {
+    background-color: var(--color-hover);
+  }
+  &:focus {
+    background-color: var(--color-hover);
+    color: var(--color-focus);
+  }
+}
