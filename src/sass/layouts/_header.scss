@@ -14,11 +14,6 @@
     margin-left: auto;
     width: 152px;
     height: 42px;
-    @include font(600, 14px, 17px, null);
-    color: #000000;
-    background-color: var(--color-default);
-    border: none;
-    border-radius: 10px;
   }
 
   &__item {
