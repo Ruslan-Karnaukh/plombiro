@@ -1,0 +1,48 @@
+.advantages {
+  padding-bottom: 80px;
+  color: var(--color-focus);
+}
+
+.advantages__list {
+  display: flex;
+  gap: 32px;
+}
+
+.advantages__item {
+  position: relative;
+}
+
+.advantages__cow::before {
+  content: '';
+  background-image: url('/src/images/little-cow.png');
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, -50%);  
+}
+
+.advantages__weight::before {
+  content: url('/src/images/weight.png');
+}
+
+.advantages__ice::before {
+  content: url('/src/images/ice.png');
+}
+
+.advantages__text {
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 71px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.advantages__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
