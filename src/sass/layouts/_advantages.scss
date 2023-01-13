@@ -1,48 +1,102 @@
 .advantages {
-  padding-bottom: 80px;
   color: var(--color-focus);
 }
 
 .advantages__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 32px;
 }
 
 .advantages__item {
   position: relative;
+  display: flex;
+  width: 230px;
+
+  @media screen and (min-width: 768px) {
+    width: 152px;
+    gap: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+    gap: 32px;
+  }
 }
 
-.advantages__cow::before {
+.advantages__box {
+  margin-top: 66px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 82px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 90px;
+  }
+}
+
+.item-cow::before {
   content: '';
   background-image: url('/src/images/little-cow.png');
+  display: block;
   width: 50px;
   height: 50px;
   position: absolute;
-  right: 50%;
-  transform: translate(50%, -50%);  
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.advantages__weight::before {
+.item-weight::before {
+  content: '';
   content: url('/src/images/weight.png');
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.advantages__ice::before {
+.item-ice::before {
+  content: '';
   content: url('/src/images/ice.png');
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .advantages__text {
-  font-weight: 700;
-  font-size: 58px;
-  line-height: 71px;
-  letter-spacing: 0.04em;
+  @include font(700, 36px, 44px, 0.04em);
   text-align: center;
-  margin-bottom: 12px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 12px;
+    @include font(700, 48px, 59px, 0.04em);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(700, 58px, 71px, 0.04em);
+  }
 }
 
 .advantages__description {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  letter-spacing: 0.02em;
+  @include font(700, 12px, 20px, null);
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    @include font(400, 14px, 24px, null);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(400, 16px, 28px, 0.02em);
+  }
 }
