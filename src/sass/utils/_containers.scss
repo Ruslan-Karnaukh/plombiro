@@ -5,7 +5,7 @@
 .container {
 
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 20px;
 
   @include mobile {
     width: 480px;
@@ -13,9 +13,11 @@
 
   @include tablet {
     width: 768px;
+    padding: 0 30px;
   }
 
   @include desktop {
     width: 1200px;
+    padding: 0 15px;
   }
 }
