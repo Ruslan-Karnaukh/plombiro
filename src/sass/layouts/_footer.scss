@@ -52,8 +52,6 @@ font-size: 30px;
   }
 }
 
-.footer__socials__box {
-}
 .footer__socials__list {
 display: flex;
 justify-content: end;
@@ -66,9 +64,6 @@ margin-bottom: 20px;
 @include desktop {
 margin-bottom: 40px;
 }
-}
-
-.footer__socials__items {
 }
 
 .footer__socials__link {
@@ -122,6 +117,7 @@ padding:12px 0;
 }
 
 .license__text {
+width: 280px;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.5;
