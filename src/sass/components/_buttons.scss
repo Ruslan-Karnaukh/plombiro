@@ -1,0 +1,37 @@
+.button {
+  background-color: var(--color-default);
+  color: var(--color-text);
+  @include font(600, 14px, 18px, null);
+  border: none;
+  border-radius: 10px;
+  transition: background-color var(--cubic);
+  cursor: pointer;
+  &:hover {
+    background-color: var(--color-hover);
+  }
+  &:focus {
+    background-color: var(--color-hover);
+    color: var(--color-focus);
+  }
+  &__item {
+    margin-left: 4px;
+    fill: currentColor;
+  }
+}
+
+.btn {
+  background-color: transparent;
+  color: var(--color-text);
+  @include font(600, 14px, 18px, null);
+  border: 2px solid var(--color-default);
+  border-radius: 10px;
+  transition: border-color var(--cubic);
+  cursor: pointer;
+  &:hover {
+    border-color: var(--color-hover);
+  }
+  &:focus {
+    border-color: var(--color-hover);
+    color: var(--color-focus);
+  }
+}
