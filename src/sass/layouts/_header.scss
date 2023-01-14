@@ -6,15 +6,12 @@
     padding-top: 12px;
     @include mobile {
       padding-top: 14px;
-      padding-bottom: 40px;
     }
     @include tablet {
       padding-top: 20px;
-      padding-bottom: 14px;
     }
     @include desktop {
       padding-top: 8px;
-      padding-bottom: 45px;
     }
   }
 
