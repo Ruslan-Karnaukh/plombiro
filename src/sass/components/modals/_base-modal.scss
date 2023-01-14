@@ -63,7 +63,7 @@
 
   /*  Установаем ширину окна  */
   width: 100%;
-  max-width: 600px;
+  width: 568px;
 
   /*  Центрируем и задаем z-index */
   position: fixed;
@@ -80,6 +80,13 @@
   border: 2px solid #f8d24e;
   background-color: #fcfcfc;
   transition: 0.3s all;
+
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    // height: 674px;
+
+    overflow-y: auto;
+  }
 }
 
 /* Стили для активных классов подложки и окна */
@@ -93,3 +100,17 @@
 // .backdrop.is-hidden .modal {
 //   transform: translate(500px, 500px);
 // }
+
+.modal__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-radius: 50%;
+  border: transparent;
+}

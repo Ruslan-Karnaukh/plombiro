@@ -1,24 +1,9 @@
-.modal__close {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-  border-radius: 50%;
-  border: transparent;
-}
-
 .modal__title {
+  display: block;
   width: 322px;
 
   font-family: 'Seymour One', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 140%;
+  @include font(400, 20px, 28px, null);
 
   display: flex;
   align-items: center;
@@ -28,9 +13,17 @@
   margin-left: auto;
 
   margin-bottom: 24px;
+
+  @media screen and (max-width: 767px) {
+    width: 221px;
+    height: 72px;
+
+    @include font(400, 16px, 24px, null);
+  }
 }
 
 .modal__text {
+  display: block;
   width: 448px;
 
   text-align: left;
@@ -39,11 +32,14 @@
   margin-left: auto;
   margin-bottom: 32px;
 
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
+  @include font(400, 16px, 22px, null);
 
-  color: #131313;
+  color: var(--color-base);
+
+  @media screen and (max-width: 767px) {
+    width: 222px;
+    @include font(400, 14px, 20px, null);
+  }
 }
 
 input,
@@ -74,6 +70,10 @@ textarea {
   padding-left: 16px;
 
   margin-bottom: 16px;
+
+  @media screen and (max-width: 767px) {
+    width: 224px;
+  }
 }
 
 .form__input--comment {
@@ -82,10 +82,9 @@ textarea {
 
 .form__input::placeholder {
   font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 140%;
-  color: #131313;
+  @include font(400, 14px, 20px, null);
+
+  color: var(--color-base);
 }
 
 .form__input--comment {
@@ -102,11 +101,10 @@ textarea {
   border-radius: 10px;
   border: transparent;
 
-  font-weight: 600;
-  font-size: 14px;
-  line-height: calc(17 / 14);
+  @include font(600, 14px, 17px, null);
+
   display: flex;
   align-items: center;
   text-align: center;
-  color: #131313;
+  color: var(--color-base);
 }

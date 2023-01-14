@@ -1,9 +1,7 @@
 .modal__loctitle {
   font-family: 'Seymour One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 140%;
+
+  @include font(400, 20px, 28px, null);
 
   display: flex;
   align-items: center;
@@ -12,11 +10,20 @@
 
   margin-bottom: 32px;
 
-  color: #131313;
+  color: var(--color-base);
+
+  @media screen and (max-width: 767px) {
+    @include font(400, 16px, 24px, null);
+  }
 }
 
 .modal__map {
   margin-bottom: 32px;
+
+  @media screen and (max-width: 767px) {
+    width: 224px;
+    height: 199px;
+  }
 }
 
 .modal__button {
@@ -28,12 +35,11 @@
 }
 
 .modal__link {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: calc(17 / 14);
+  @include font(600, 14px, 17px, null);
+
   display: flex;
   align-items: center;
   text-align: center;
 
-  color: #131313;
+  color: var(--color-base);
 }
