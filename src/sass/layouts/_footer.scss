@@ -1,10 +1,10 @@
 .footer__box {
   margin-bottom: 40px;
 @include tablet{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
 } 
 @include desktop {
   margin-bottom: 60px;
@@ -13,6 +13,9 @@
     
 .footer__thumb {
   width: 234px;
+  @include tablet-max {
+    margin-bottom: 60px;
+  }
   @include tablet {
   width: 352px;
   }
@@ -29,14 +32,14 @@
   color: var(--color-focus);
   margin-bottom: 16px;
   @include tablet {
-font-size: 26px;
-letter-spacing: 0.04em;
-margin-bottom: 8px;
+  font-size: 26px;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
   }
   @include desktop {
     margin-bottom: 14px;
   font-weight: 400;
-font-size: 30px;
+  font-size: 30px;
   }
 }
 
@@ -62,8 +65,8 @@ justify-content: end;
 gap: 20;
 margin-bottom: 20px;
 @include tablet {
-    gap: 30;
-    margin-bottom: 34px;
+  gap: 30;
+  margin-bottom: 34px;
 }
 @include desktop {
 margin-bottom: 40px;
@@ -84,11 +87,10 @@ margin-bottom: 40px;
   }
 }
 
-
 .footer__tel {
 text-align: right;
-
 }
+
 .footer__tel__link {
 font-weight: 700;
 font-size: 12px;
