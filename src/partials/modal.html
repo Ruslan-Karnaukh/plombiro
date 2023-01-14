@@ -1,0 +1,50 @@
+<div class="modal" data-modal="franchise">
+      <button type="submit" class="modal__close js-modal-close" data-modal-close>
+        <svg width="24px" height="24px">
+          <use href="./images/symbol.svg#icon-menu-close_black"></use>
+        </svg>
+      </button>
+      <h2 class="modal__title">Thank you for your interest in owning an Ice Cream shop</h2>
+      <p class="modal__text">
+        Due to the overwhelming volume of franchise requests we are not accepting new franchisee
+        applications at this time. Once the application process resumes, we will contact you for
+        further information. Please fill out the contact information below and we will reach out for
+        additional information. We appreciate your patience.
+      </p>
+      <form class="form">
+        <input
+          type="text"
+          name="name-user"
+          placeholder="Name"
+          required
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          class="form__input"
+        />
+        <input
+          type="text"
+          name="tel"
+          placeholder="Phone"
+          required
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          class="form__input"
+        />
+        <input
+          type="text"
+          name="mail"
+          placeholder="Email"
+          required
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          class="form__input"
+        />
+        <textarea
+          name="text"
+          cols="30"
+          rows="10"
+          placeholder="Comment"
+          class="form__input form__input--comment"
+        ></textarea>
+        <button type="submit" class="form__button">Submit</button>
+      </form>
+    </div>
+
+     <div class="overlay is-hidden js-overlay-modal" data-modal></div>
