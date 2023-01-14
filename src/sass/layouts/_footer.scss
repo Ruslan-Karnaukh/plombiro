@@ -1,10 +1,14 @@
 .footer__box {
+  margin-bottom: 40px;
 @include tablet{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+   margin-bottom: 32px;
 } 
+@include desktop {
+  margin-bottom: 60px;
+}
 }
     
 .footer__thumb {
@@ -106,24 +110,21 @@ color:var(--color-base);
 .license__box {
 border-top: 1px solid #E1E1E1;
 padding: 20px 0;
-margin-top: 40px;
 @include tablet {
-margin-top: 32px;
 padding:12px 0;
-}
-@include desktop {
-  margin-top: 60px;
 }
 }
 
 .license__text {
-width: 280px;
+width: 150px;
+margin: 0 auto;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.5;
 text-align: center;
 color: var( --color-disabled);
 @include tablet{
+ width: 100%;
  line-height: 1.8;   
 }
 @include desktop {
