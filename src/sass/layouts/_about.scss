@@ -4,23 +4,20 @@
 }
 
 .tradition-title__subtitle { 
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
+    // @include font (700, 18px, 22px, null);
     text-align: center;
     text-transform: uppercase;
     color: var(--color-focus); 
+    margin-bottom: 12px;
 }
 .tradition-title__title {
+    width: 200px;
     font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 38px;
+    // @include font (400, 30px, 38px, 00.04em);
     text-align: center;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--color-focus);
+    margin-bottom: 32px;
 }
 .pucture--circle {
     content: "";
@@ -39,29 +36,35 @@
     height: 278px;
     position: relative;
     top: 22px;
+    margin-bottom: 40px;
 }
 .content-wrap {
     width: 220px;
     height: 126px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 62px;
 }
 .content-wrap__ise-text {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.75;
-    letter-spacing: 0.04em;
+    // @include font (400, 12px, 21px, 00.04em);
     color: var(--color-focus);
     margin-bottom: 4px;
     text-align: center;
 }
 .content-wrap__product-text {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.58;
-    letter-spacing: 0.04em;
+    // @include font (400, 12px, 23px, 00.04em);
     color: var(--color-focus);
     margin-bottom: 24px;
     text-align: center;
+    display: none;
+}
+.content-wrap__btn {
+    font-family: 'Montserrat';
+    // @include font(600, 14px, 18px, null);
+    // display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    background-color: #F8D24E;
+    padding: 12px 51px 12px 34px;
+    width: 164px;
 }
