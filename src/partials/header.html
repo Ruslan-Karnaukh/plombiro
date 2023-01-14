@@ -1,17 +1,32 @@
 <header class="header">
   <div class="container header__box">
-    <svg width="60" height="65" class="header__logo">
-      <use href="./images/symbol.svg#icon-logo"></use>
-    </svg>
+    <picture>
+      <source
+        srcset="
+          ./images/logo_desktop-1x.png 1x,
+          ./images/logo_desktop-2x.png 2x
+        "
+        media="(min-width:1200px)"
+        type="image/png"
+      />
+      <source
+        srcset="./images/logo-1x.png 1x, ./images/logo-2x.png 2x"
+        media="(max-width:1199px)"
+        type="image/png"
+      />
+      <img
+        class="header__logo"
+        src="./images/logo-1x.png"
+        alt="Logo ice cream"
+      />
+    </picture>
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
           <a href="#" class="navigation__link">Home</a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link navigation__link--active link"
-            >How it’s made?</a
-          >
+          <a href="#" class="navigation__link">How it’s made?</a>
         </li>
         <li class="navigation__item">
           <a href="#" class="navigation__link">Our products</a>
@@ -21,9 +36,24 @@
         </li>
       </ul>
     </nav>
+
+    <button
+      class="menu-button js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      type="button"
+    >
+      <svg width="32" height="32" aria-label="Mobile menu button">
+        <use
+          class="menu-button__icon"
+          href="./images/symbol.svg#icon-menu-open"
+        ></use>
+      </svg>
+    </button>
+
     <button type="button" class="button header__button">
       Buy now
-      <svg width="12" height="12" class="header__item">
+      <svg width="12" height="12" class="button__item">
         <use href="./images/symbol.svg#icon-button"></use>
       </svg>
     </button>
