@@ -16,9 +16,11 @@
   @include tablet-max {
     margin-bottom: 60px;
   }
+
   @include tablet {
   width: 352px;
   }
+  
   @include desktop{
     width:504px;
   }
