@@ -45,9 +45,10 @@
 .item-cow::before {
   content: '';
   background-image: url('/src/images/little-cow.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-color: var(--color-default);
   border-radius: 25px;
-  display: block;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -58,10 +59,11 @@
 
 .item-weight::before {
   content: '';
-  content: url('/src/images/weight.png');
+  background-image: url('/src/images/weight.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-color: var(--color-default);
   border-radius: 25px;
-  display: block;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -72,10 +74,11 @@
 
 .item-ice::before {
   content: '';
-  content: url('/src/images/ice.png');
+  background-image: url('/src/images/ice.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-color: var(--color-default);
   border-radius: 25px;
-  display: block;
   width: 50px;
   height: 50px;
   position: absolute;
