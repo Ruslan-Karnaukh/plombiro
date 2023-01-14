@@ -1,0 +1,67 @@
+.about-ice-comp {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.tradition-title__subtitle { 
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-focus); 
+}
+.tradition-title__title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-focus);
+}
+.pucture--circle {
+    content: "";
+    width: 279px;
+    height: 278px;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    border-radius: 140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pucture__img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 279px;
+    height: 278px;
+    position: relative;
+    top: 22px;
+}
+.content-wrap {
+    width: 220px;
+    height: 126px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 62px;
+}
+.content-wrap__ise-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.75;
+    letter-spacing: 0.04em;
+    color: var(--color-focus);
+    margin-bottom: 4px;
+    text-align: center;
+}
+.content-wrap__product-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.58;
+    letter-spacing: 0.04em;
+    color: var(--color-focus);
+    margin-bottom: 24px;
+    text-align: center;
+}
