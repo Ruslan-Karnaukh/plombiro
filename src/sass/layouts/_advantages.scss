@@ -1,0 +1,116 @@
+.advantages {
+  color: var(--color-focus);
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  @media screen and (min-width: 768px) {
+    gap: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  display: flex;
+  width: 230px;
+
+  @media screen and (min-width: 768px) {
+    width: 152px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+  }
+}
+
+.advantages__box {
+  margin-top: 66px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 82px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 90px;
+  }
+}
+
+.item-cow::before {
+  content: '';
+  background-image: url('/src/images/little-cow.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: var(--color-default);
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.item-weight::before {
+  content: '';
+  background-image: url('/src/images/weight.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: var(--color-default);
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.item-ice::before {
+  content: '';
+  background-image: url('/src/images/ice.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: var(--color-default);
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.advantages__text {
+  @include font(700, 36px, 44px, 0.04em);
+  text-align: center;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 12px;
+    @include font(700, 48px, 59px, 0.04em);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(700, 58px, 71px, 0.04em);
+  }
+}
+
+.advantages__description {
+  @include font(700, 12px, 20px, null);
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    @include font(400, 14px, 24px, null);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(400, 16px, 28px, 0.02em);
+  }
+}
