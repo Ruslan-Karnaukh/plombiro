@@ -1,0 +1,128 @@
+.hero {
+  position: relative;
+  & .container {
+    position: relative;
+  }
+
+  &__title {
+    font-family: 'Seymour One';
+    margin-bottom: 32px;
+    width: 247px;
+    @include font(400, 26px, 33px, 0.04em);
+    color: var(--color-focus);
+    text-transform: uppercase;
+    @include tablet {
+      margin-bottom: 24px;
+    }
+    @include desktop {
+      margin-bottom: 28px;
+      width: 367px;
+      @include font(400, 38px, 48px, 0.04em);
+    }
+  }
+
+  &__btn {
+    margin-right: 12px;
+    width: 134px;
+    height: 42px;
+    color: var(--color-base);
+  }
+
+  &__button {
+    width: 154px;
+    height: 40px;
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--color-default);
+    @include font(600, 14px, 17px, null);
+    text-decoration-line: underline;
+    &:hover {
+      color: var(--color-hover);
+    }
+    &:focus {
+      color: var(--color-focus);
+    }
+  }
+
+  &__text {
+    display: none;
+    @include tablet {
+      position: absolute;
+      bottom: 52px;
+      left: 216px;
+      display: block;
+      width: 139px;
+      @include font(400, 12px, 17px, null);
+      color: var(--color-focus);
+    }
+    @include desktop {
+      width: 200px;
+      @include font(400, 14px, 20px, null);
+      bottom: 143px;
+      left: 257px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    width: 268px;
+    height: 329px;
+    bottom: 0;
+    right: 92px;
+  }
+
+  &__dots {
+    width: 320px;
+    height: 50px;
+    margin-left: auto;
+
+    @include tablet {
+      margin: 0 auto;
+      width: 768px;
+      height: 68px;
+    }
+
+    @include desktop {
+      width: 1200px;
+      height: 383px;
+    }
+  }
+
+  &__list {
+    display: none;
+    @include tablet {
+      position: absolute;
+      top: 14px;
+      right: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    @include desktop {
+      top: 8px;
+      right: 16px;
+      gap: 16px;
+    }
+  }
+
+  &__item {
+    text-align: right;
+  }
+
+  &__number {
+    @include font(900, 28px, 34px, 0.04em);
+    color: var(--color-base);
+    text-transform: uppercase;
+    @include desktop {
+      @include font(900, 46px, 56px, 0.04em);
+    }
+  }
+
+  &__name {
+    @include font(400, 8px, 10px, null);
+    color: var(--color-focus);
+  }
+  @include desktop {
+    @include font(400, 14px, 17px, null);
+  }
+}
