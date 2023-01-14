@@ -1,0 +1,91 @@
+.header {
+  &__box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    @include mobile {
+      padding-top: 14px;
+      padding-bottom: 40px;
+    }
+    @include tablet {
+      padding-top: 20px;
+      padding-bottom: 14px;
+    }
+    @include desktop {
+      padding-top: 8px;
+      padding-bottom: 45px;
+    }
+  }
+
+  &__logo {
+    width: 48px;
+    height: 44px;
+    @include desktop {
+      margin-right: 308px;
+      width: 60px;
+      height: 65px;
+    }
+  }
+
+  &__button {
+    display: none;
+    @include tablet {
+      position: relative;
+      display: block;
+      margin-left: auto;
+      width: 152px;
+      height: 42px;
+      @include font(600, 14px, 17px, null);
+    }
+  }
+}
+
+.navigation {
+  &__list {
+    display: none;
+    @include desktop {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+  }
+
+  &__link {
+    @include font(700, 16px, 20px, null);
+    color: var(--color-default);
+    transition: color var(--cubic);
+    &:hover {
+      color: var(--color-hover);
+    }
+
+    &:focus {
+      color: var(--color-focus);
+    }
+
+    // &:disabled {
+    //   color: #ababab;
+    // }
+  }
+}
+
+.menu-button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 14px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  transition: fill var(--cubic);
+  @include tablet {
+    top: 29px;
+    right: 216px;
+  }
+  @include desktop {
+    display: none;
+  }
+}

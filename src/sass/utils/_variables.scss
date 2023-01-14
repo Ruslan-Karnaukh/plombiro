@@ -1,17 +1,15 @@
-:root{
+:root {
+  // base color
+  --color-bg: #84a178;
+  --color-base: #131313;
+  --color-text: #000000;
 
-// base color
-    --color-bg: #84A178;
-    --color-base: #131313;
+  // primary colors
+  --color-default: #f8d24e;
+  --color-focus: #fcfcfc;
+  --color-hover: #0a8817;
+  --color-disabled: #7a7a7a;
 
-    
-// primary colors
-    --color-default: #F8D24E;
-    --color-focus: #FCFCFC;
-    --color-hover: #0A8817;
-    --color-disabled: #7A7A7A;
-
-// cubic
-    --cubic : 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  // cubic
+  --cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
