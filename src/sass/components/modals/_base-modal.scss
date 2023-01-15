@@ -1,3 +1,7 @@
+textarea {
+  resize: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -77,8 +81,8 @@
   text-align: center;
   padding: 30px;
   border-radius: 10px;
-  border: 2px solid #f8d24e;
-  background-color: #fcfcfc;
+  border: 2px solid var(--color-default);
+  background-color: var(--color-focus);
   transition: 0.3s all;
 
   @media screen and (max-width: 767px) {

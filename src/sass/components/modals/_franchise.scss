@@ -97,7 +97,7 @@ textarea {
 
   padding: 12px 34px;
 
-  background: #f8d24e;
+  background: var(--color-default);
   border-radius: 10px;
   border: transparent;
 
@@ -107,4 +107,11 @@ textarea {
   align-items: center;
   text-align: center;
   color: var(--color-base);
+
+  transition: color, background-color, var(--cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-hover);
+  }
 }
