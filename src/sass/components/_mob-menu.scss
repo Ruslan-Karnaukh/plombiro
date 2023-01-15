@@ -72,6 +72,7 @@
     &:focus{
         background-color: var(--color-hover);
         color: var(--color-focus);
+        fill: var(--color-focus) ;
 }
 @media screen and (min-width: 768px){
     display: none;
