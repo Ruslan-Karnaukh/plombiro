@@ -193,29 +193,36 @@
     font-family: 'Montserrat';
     @include font(600, 14px, 18px, null);
     display: flex;
+    justify-content: center;
+    align-items: center;
     background: #F8D24E;
     padding: 12px 51px 12px 34px;
     width: 164px;
     border: none;
     margin: 0 auto;
     color: #000000;
+    transition: background-color  250ms cubic-bezier(0.4, 0, 0.2, 1),
+     color  250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+     &:hover {
+        background-color: var(--color-hover);
+        }
+        &:focus {
+            background-color: var(--color-hover);
+            color: var(--color-focus);  
+            }
 
     @include tablet {
         margin: 0px; 
      }
 }
-.content-wrap__btn:hover {
-background-color: var(--color-hover);
-}
-.content-wrap__btn:focus {
-background-color: var(--color-hover);
-color: var(--color-focus);  
-}
+
+
 .content-wrap__btn:disabled {
     background-color: var(--color-disabled);
     color: #000000;
 }
 .content-wrap__icon {
     fill: #000000;
-    vertical-align: middle;
+    // vertical-align: middle;
 }
