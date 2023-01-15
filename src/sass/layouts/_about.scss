@@ -190,19 +190,15 @@
 }
 
 .content-wrap__btn {
-    font-family: 'Montserrat';
-    @include font(600, 14px, 18px, null);
+    @extend %button;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #F8D24E;
-    padding: 12px 51px 12px 34px;
-    width: 164px;
+    background-color: #F8D24E;
+    padding: 15px 34px;
     border: none;
-    margin: 0 auto;
-    color: #000000;
-    transition: background-color  250ms cubic-bezier(0.4, 0, 0.2, 1),
-     color  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color  250ms --cubic,
+     color  250ms --cubic;
 
      &:hover {
         background-color: var(--color-hover);
@@ -215,14 +211,4 @@
     @include tablet {
         margin: 0px; 
      }
-}
-
-
-.content-wrap__btn:disabled {
-    background-color: var(--color-disabled);
-    color: #000000;
-}
-.content-wrap__icon {
-    fill: #000000;
-    // vertical-align: middle;
 }
