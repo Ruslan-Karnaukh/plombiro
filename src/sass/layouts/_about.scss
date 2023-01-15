@@ -2,22 +2,76 @@
     padding-top: 60px;
     padding-bottom: 50px;
 }
+.tradition-title {
+    display: block;
+    // flex-direction: column-reverse;
+    // gap: 12px;
+    text-align: center;
+
+    @include mobile {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 12px;
+            align-items: center;
+    }
+
+    @include tablet {
+        display: block;  
+    }
+   
+}
+
+
 
 .tradition-title__subtitle { 
-    // @include font (700, 18px, 22px, null);
-    text-align: center;
+    @include font (700, 18px, 22px, null);
+    // text-align: center;
     text-transform: uppercase;
     color: var(--color-focus); 
     margin-bottom: 12px;
+    // width: calc((100% - 12px)/2);
+
+    @include mobile {
+    width: calc((100% - 12px)/2);
+    margin-bottom: 32px;
+    }
+
+    @include tablet {
+    width: 100%;
+    margin-bottom: 12px;
+    }
+
+    @include desktop {
+        @include font (800, 30px, 37px, 0.04em);   
+    }
 }
 .tradition-title__title {
     width: 200px;
     font-family: 'Seymour One';
-    // @include font (400, 30px, 38px, 00.04em);
+    @include font (400, 30px, 38px, 0.04em);
     text-align: center;
     text-transform: uppercase;
     color: var(--color-focus);
     margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    // width: calc((100% - 12px)/2);
+
+    @include mobile {
+        width: calc((100% - 12px)/2);
+        margin-bottom: 0;
+    }
+
+    @include tablet {
+        width: 454px;
+        margin-bottom: 72px;                                                                                                                                                                                                                                                                                                                
+    }
+
+    @include desktop {
+        width: 100%;
+        @include font (400, 36px, 45px, 0.06em);
+        margin-bottom: 82px;   
+    }
 }
 .pucture--circle {
     content: "";
@@ -28,6 +82,22 @@
     border-radius: 140px;
     margin-left: auto;
     margin-right: auto;
+
+    @include tablet {
+        display: inline-block;
+        margin-left: 0;
+        margin-right: 38px; 
+        width: 330px;
+        height: 330px; 
+        border-radius: 165px;
+    }
+
+    @include desktop {
+       width: 490px;
+       height: 490px;
+       margin-right: 109px;
+       border-radius: 250px;   
+    }
 }
 .pucture__img {
     margin-left: auto;
@@ -37,34 +107,113 @@
     position: relative;
     top: 22px;
     margin-bottom: 40px;
+
+    @include tablet {
+        width: 330px;
+        height: 330px;                                                                                                                                                                                                                                                                                                           
+     }
+
+     @include desktop {
+        width: 490px;
+        height: 490px;     
+     }
+    
 }
 .content-wrap {
     width: 220px;
     height: 126px;
     margin-left: auto;
     margin-right: auto;
+
+    @include tablet {
+        width: 336px;
+        height: 254px;
+        display: inline-block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @include desktop {
+        width: 463px;
+        height: 253px; 
+     }
 }
 .content-wrap__ise-text {
-    // @include font (400, 12px, 21px, 00.04em);
+    @include font (400, 12px, 21px, 0.04em);
     color: var(--color-focus);
     margin-bottom: 4px;
     text-align: center;
+
+    @include tablet {
+       text-align: left;
+       margin-bottom: 8px; 
+    }
+
+    @include desktop {
+        @include font (400, 16px, 28px, 0.04em); 
+     }
 }
 .content-wrap__product-text {
-    // @include font (400, 12px, 23px, 00.04em);
+    @include font (400, 12px, 23px, 0.04em);
     color: var(--color-focus);
-    margin-bottom: 24px;
+    // margin-bottom: 24px;
     text-align: center;
-    display: none;
+    margin-bottom: 10px;
+
+    @include mobile {
+        margin-bottom: 24px; 
+    }
+    
+    @include tablet {
+        text-align: left;
+        margin-bottom: 8px; 
+     }
+
+     @include desktop {
+        @include font (400, 14px, 27px, 0.04em); 
+     }
 }
+.content-wrap__text {
+    @include font (400, 12px, 23px, 0.04em);
+    color: #FCFCFC;
+    // display: none;
+    @include tablet-max {
+        display: none; 
+    }
+
+    @include tablet {
+        margin-bottom: 32px; 
+     }
+
+     @include desktop {
+        @include font (400, 14px, 27px, 0.04em); 
+        margin-bottom: 54px;
+     }
+}
+
 .content-wrap__btn {
     font-family: 'Montserrat';
-    // @include font(600, 14px, 18px, null);
-    // display: flex;
-    align-items: center;
-    text-align: center;
-    color: #000000;
-    background-color: #F8D24E;
+    @include font(600, 14px, 18px, null);
+    display: flex;
+    // align-items: center;
+    // text-align: center;
+    
+    background: #F8D24E;
     padding: 12px 51px 12px 34px;
     width: 164px;
+    border: none;
+    margin: 0 auto;
+    color: #000000;
+
+    @include tablet {
+        margin: 0px; 
+     }
 }
+.content-wrap__btn:hover {
+background-color: var(--color-hover);
+}
+.content-wrap__btn:focus {
+background-color: var(--color-hover);
+color: var(--color-focus);  
+}
+
