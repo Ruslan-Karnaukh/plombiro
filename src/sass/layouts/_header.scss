@@ -2,7 +2,7 @@
   &__box {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     padding-top: 12px;
     @include mobile {
       padding-top: 14px;
@@ -43,26 +43,25 @@
     display: none;
     @include desktop {
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       gap: 28px;
     }
   }
 
   &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 13px;
     @include font(700, 16px, 20px, null);
-    color: var(--color-default);
+    color: var(--color-focus);
     transition: color var(--cubic);
     &:hover {
-      color: var(--color-hover);
+      color: var(--color-default);
     }
 
     &:focus {
-      color: var(--color-focus);
+      color: var(--color-default);
     }
-
-    // &:disabled {
-    //   color: #ababab;
-    // }
   }
 }
 
