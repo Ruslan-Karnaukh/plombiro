@@ -5,13 +5,23 @@
       <h2 class="tradition-title__title">how it’s made?</h2>
     </div>
     <div class="pucture pucture--circle">
-      <img
+     
+      <picture>
+        <source srcset="./images/cow_desktop-1x.png 1x, ./images/cow_desktop-2x.png 2x"
+        media="(min-width:1200px)">
+        <source srcset="./images/cow_tablet-1x.png 1x, ./images/cow_tablet-2x.png 2x"
+        media="(min-width:768px)">
+        <source srcset="./images/cow_mobile-1x.png 1x, ./images/cow_mobile-2x.png 2x"
+        media="(min-width:480px)">
+        <img
         class="pucture__img"
-        src="./images/cow_mobile-1x.png"
+        srcset="./images/cow_desktop-1x.png 1x, ./images/cow_desktop-2x.png 2x"
+        src="./images/cow_desktop-1x.png"
         alt="cow"
         width="279"
         height="278"
       />
+      </picture>
     </div>
     <div class="content-wrap">
       <p class="content-wrap__ise-text">
@@ -25,7 +35,9 @@
       </p>
       <p class="content-wrap__text">This is enough to choose ice cream and coffee for any mood!</p>
       <button type="button" class="content-wrap__btn">
-        Read more
+        Read more  <svg class="content-wrap__icon" width="12" height="12">
+          <use href="./images/symbol.svg#icon-button"></use>
+        </svg>
           </button>
     </div>
   </div>
