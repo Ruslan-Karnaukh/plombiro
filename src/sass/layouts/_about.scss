@@ -197,18 +197,22 @@
     background-color: #F8D24E;
     padding: 15px 34px;
     border: none;
-    transition: background-color  250ms --cubic,
-     color  250ms --cubic;
+    transition: background-color  250ms --cubic;
+
 
      &:hover {
         background-color: var(--color-hover);
         }
         &:focus {
             background-color: var(--color-hover);
-            color: var(--color-focus);  
+            color: var(--color-focus); 
+            fill: var(--color-focus); 
             }
 
     @include tablet {
         margin: 0px; 
      }
+}
+.button__img{
+    margin-left: 4px;
 }
