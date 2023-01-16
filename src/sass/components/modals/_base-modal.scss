@@ -2,29 +2,6 @@ textarea {
   resize: none;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-// .overlay {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   z-index: 1;
-//   background-color: #88bc75cf;
-// }
-
 .overlay {
   /* Скрываем подложку  */
   opacity: 0;
@@ -43,22 +20,7 @@ textarea {
 .overlay.is-hidden {
   visibility: hidden;
   opacity: 0;
-  pointer-events: none;
 }
-
-// .modal {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   padding: 32px 60px;
-//   transform: translate(-50%, -50%);
-
-//   border-radius: 10px;
-//   border: 2px solid #f8d24e;
-//   background-color: #fcfcfc;
-
-//   text-align: center;
-// }
 
 .modal {
   /* Скрываем окна  */
@@ -67,7 +29,7 @@ textarea {
 
   /*  Установаем ширину окна  */
   width: 100%;
-  width: 568px;
+  max-width: 600px;
 
   /*  Центрируем и задаем z-index */
   position: fixed;
@@ -87,9 +49,6 @@ textarea {
 
   @media screen and (max-width: 767px) {
     width: 280px;
-    // height: 674px;
-
-    overflow-y: auto;
   }
 }
 
@@ -100,10 +59,6 @@ textarea {
   opacity: 1;
   visibility: visible;
 }
-
-// .backdrop.is-hidden .modal {
-//   transform: translate(500px, 500px);
-// }
 
 .modal__close {
   position: absolute;
@@ -117,4 +72,25 @@ textarea {
   background: transparent;
   border-radius: 50%;
   border: transparent;
+}
+
+.form__button {
+  margin: auto;
+
+  padding: 12px 34px;
+
+  background: var(--color-default);
+  border-radius: 10px;
+  border: transparent;
+
+  @include font(600, 14px, 17px, null);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #131313;
+
+  @media screen and (max-width: 767px) {
+    @include font(600, 14px, 17px, null);
+  }
 }

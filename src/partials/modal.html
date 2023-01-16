@@ -1,6 +1,87 @@
-<!-- Read More -->
+<!-- Buy now  -->
 
-<!-- Our Locattion -->
+<div class="modal" data-modal="buynow">
+  <button type="submit" class="modal__close js-modal-close" data-modal-close>
+    <svg width="24px" height="24px">
+      <use href="./images/symbol.svg#icon-menu-close_black"></use>
+    </svg>
+  </button>
+  <h2 class="modal__buytitle">Buy now</h2>
+  <ul class="content">
+    <li class="content__item content__item--icecream">
+      <p class="content__name">ICE CREAM</p>
+      <div class="content__bg content__bg--icecream"></div>
+      <div class="content__img content__img--icecream"></div>
+    </li>
+    <li class="content__item content__item--icecoffee">
+      <p class="content__name">ICE COFFEE</p>
+      <div class="content__bg content__bg--icecoffee"></div>
+      <div class="content__img content__img--icecoffee"></div>
+    </li>
+    <li class="content__item content__item--milkshake">
+      <p class="content__name">MILKSHAKE</p>
+      <div class="content__bg content__bg--milkshake"></div>
+      <div class="content__img content__img--milkshake"></div>
+    </li>
+  </ul>
+  <form class="form">
+    <input
+      type="text"
+      name="name-user"
+      placeholder="Name"
+      required
+      pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+      class="form__input"
+    />
+    <input
+      type="text"
+      name="tel"
+      placeholder="Phone"
+      required
+      pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+      class="form__input"
+    />
+    <textarea
+      name="text"
+      cols="30"
+      rows="10"
+      placeholder="Comment"
+      class="form__input form__input--comment"
+    ></textarea>
+    <button type="submit" class="form__button">Submit</button>
+  </form>
+</div>
+
+<!-- Read More  -->
+
+<div class="modal" data-modal="readmore">
+  <button type="submit" class="modal__close js-modal-close" data-modal-close>
+    <svg width="24px" height="24px">
+      <use href="./images/symbol.svg#icon-menu-close_black"></use>
+    </svg>
+  </button>
+  <h2 class="modal__readtitle">How it’s made?</h2>
+  <div>
+    <iframe
+      width="448"
+      height="205"
+      src="https://www.youtube.com/embed/pqxtkxVbceA"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      style="border-radius: 10px"
+      class="modal__video"
+    ></iframe>
+  </div>
+  <p class="modal__readtext">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et
+  </p>
+</div>
+
+<!-- Our Location -->
 
 <div class="modal" data-modal="ourlocations">
   <button type="submit" class="modal__close js-modal-close" data-modal-close>
@@ -21,12 +102,12 @@
       class="modal__map"
     ></iframe>
   </div>
-  <button type="button" class="modal__button">
+  <button type="button" class="form__button">
     <a href="https://goo.gl/maps/E5r8N7QFcrYJqA797" class="modal__link">Open map</a>
   </button>
 </div>
 
-<!-- Franchise -->
+<!-- Franchise  -->
 
 <div class="modal" data-modal="franchise">
   <button type="submit" class="modal__close js-modal-close" data-modal-close>
@@ -76,5 +157,4 @@
     <button type="submit" class="form__button">Submit</button>
   </form>
 </div>
-
 <div class="overlay is-hidden js-overlay-modal" data-modal></div>

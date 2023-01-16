@@ -1,5 +1,4 @@
 .modal__title {
-  display: block;
   width: 322px;
 
   font-family: 'Seymour One', sans-serif;
@@ -16,14 +15,14 @@
 
   @media screen and (max-width: 767px) {
     width: 221px;
-    height: 72px;
 
     @include font(400, 16px, 24px, null);
+
+    margin-bottom: 20px;
   }
 }
 
 .modal__text {
-  display: block;
   width: 448px;
 
   text-align: left;
@@ -38,7 +37,10 @@
 
   @media screen and (max-width: 767px) {
     width: 222px;
+
     @include font(400, 14px, 20px, null);
+
+    margin-bottom: 24px;
   }
 }
 
@@ -47,18 +49,11 @@ textarea {
   margin: 0;
 
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
+  border: 1px solid var(--color-bg);
   border-radius: 10px;
 }
 
 .form {
-  // display: flex;
-  // flex-direction: column;
-
-  // width: 100%;
-  // margin-left: auto;
-  // margin-right: auto;
-
   align-items: center;
 }
 
@@ -73,11 +68,22 @@ textarea {
 
   @media screen and (max-width: 767px) {
     width: 224px;
+
+    padding: 8px 12px;
+
+    margin-bottom: 12px;
   }
 }
 
 .form__input--comment {
+  padding: 12px;
+  height: 84px;
   margin-bottom: 32px;
+
+  @media screen and (max-width: 767px) {
+    height: 64px;
+    margin-bottom: 24px;
+  }
 }
 
 .form__input::placeholder {
@@ -85,33 +91,8 @@ textarea {
   @include font(400, 14px, 20px, null);
 
   color: var(--color-base);
-}
 
-.form__input--comment {
-  padding: 12px;
-  height: 84px;
-}
-
-.form__button {
-  margin: auto;
-
-  padding: 12px 34px;
-
-  background: var(--color-default);
-  border-radius: 10px;
-  border: transparent;
-
-  @include font(600, 14px, 17px, null);
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: var(--color-base);
-
-  transition: color, background-color, var(--cubic);
-
-  &:hover,
-  &:focus {
-    background-color: var(--color-hover);
+  @media screen and (max-width: 767px) {
+    @include font(400, 12px, 17px, null);
   }
 }

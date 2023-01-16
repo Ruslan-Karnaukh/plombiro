@@ -1,0 +1,50 @@
+.modal__readtitle {
+  justify-content: center;
+
+  margin-bottom: 32px;
+
+  font-family: 'Seymour One';
+  @include font(400, 20px, 28px, null);
+
+  display: flex;
+  align-items: center;
+  text-align: left;
+
+  color: var(--color-base);
+
+  @media screen and (max-width: 767px) {
+    @include font(400, 16px, 24px, null);
+
+    margin-bottom: 20px;
+  }
+}
+
+.modal__video {
+  margin-bottom: 32px;
+
+  @media screen and (max-width: 767px) {
+    width: 224px;
+    height: 199px;
+
+    margin-bottom: 20px;
+  }
+}
+
+.modal__readtext {
+  width: 448px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  @include font(400, 16px, 22px, null);
+
+  color: var(--color-base);
+
+  text-align: left;
+
+  @media screen and (max-width: 767px) {
+    width: 224px;
+
+    @include font(400, 14px, 20px, null);
+  }
+}

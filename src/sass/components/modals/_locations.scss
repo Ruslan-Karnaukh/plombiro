@@ -1,6 +1,5 @@
 .modal__loctitle {
   font-family: 'Seymour One';
-
   @include font(400, 20px, 28px, null);
 
   display: flex;
@@ -14,6 +13,8 @@
 
   @media screen and (max-width: 767px) {
     @include font(400, 16px, 24px, null);
+
+    margin-bottom: 20px;
   }
 }
 
@@ -23,21 +24,8 @@
   @media screen and (max-width: 767px) {
     width: 224px;
     height: 199px;
-  }
-}
 
-.modal__button {
-  padding: 12px 34px;
-
-  background: var(--color-default);
-  border-radius: 10px;
-  border: transparent;
-
-  transition: color, background-color, var(--cubic);
-
-  &:hover,
-  &:focus {
-    background-color: var(--color-hover);
+    margin-bottom: 24px;
   }
 }
 
@@ -48,5 +36,5 @@
   align-items: center;
   text-align: center;
 
-  color: var(--color-base);
+  color: #131313;
 }
