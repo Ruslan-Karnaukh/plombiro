@@ -1,6 +1,20 @@
 .section__galery {
-    padding: 32px auto 40px auto;
+    padding: 0;
+    height: 30px;
+
+    @include tablet {
+        height: 140px;
+    }
+
+    @include tablet {
+        height: 100px;
+    }
 }
+
+.section__galery .container {
+    transform: translateY(2%);
+}
+
 
 .galery {
     width: 100%;
