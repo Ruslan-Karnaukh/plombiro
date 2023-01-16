@@ -47,10 +47,15 @@
 input,
 textarea {
   margin: 0;
-
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid var(--color-bg);
   border-radius: 10px;
+  outline-color: var(--color-hover);
+  box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+  &:focus{
+    outline: none;
+    box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25), 0px 7.30813px 22.9055px rgba(153, 114, 23, 0.25);
+  }
 }
 
 .form {
