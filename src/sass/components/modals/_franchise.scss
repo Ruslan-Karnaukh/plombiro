@@ -1,0 +1,98 @@
+.modal__title {
+  width: 322px;
+
+  font-family: 'Seymour One', sans-serif;
+  @include font(400, 20px, 28px, null);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  margin-bottom: 24px;
+
+  @media screen and (max-width: 767px) {
+    width: 221px;
+
+    @include font(400, 16px, 24px, null);
+
+    margin-bottom: 20px;
+  }
+}
+
+.modal__text {
+  width: 448px;
+
+  text-align: left;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 32px;
+
+  @include font(400, 16px, 22px, null);
+
+  color: var(--color-base);
+
+  @media screen and (max-width: 767px) {
+    width: 222px;
+
+    @include font(400, 14px, 20px, null);
+
+    margin-bottom: 24px;
+  }
+}
+
+input,
+textarea {
+  margin: 0;
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid var(--color-bg);
+  border-radius: 10px;
+}
+
+.form {
+  align-items: center;
+}
+
+.form__input {
+  width: 368px;
+
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 16px;
+
+  margin-bottom: 16px;
+
+  @media screen and (max-width: 767px) {
+    width: 224px;
+
+    padding: 8px 12px;
+
+    margin-bottom: 12px;
+  }
+}
+
+.form__input--comment {
+  padding: 12px;
+  height: 84px;
+  margin-bottom: 32px;
+
+  @media screen and (max-width: 767px) {
+    height: 64px;
+    margin-bottom: 24px;
+  }
+}
+
+.form__input::placeholder {
+  font-family: 'Montserrat';
+  @include font(400, 14px, 20px, null);
+
+  color: var(--color-base);
+
+  @media screen and (max-width: 767px) {
+    @include font(400, 12px, 17px, null);
+  }
+}

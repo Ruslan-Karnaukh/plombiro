@@ -1,0 +1,160 @@
+<!-- Buy now  -->
+
+<div class="modal" data-modal="buynow">
+  <button type="submit" class="modal__close js-modal-close" data-modal-close>
+    <svg width="24px" height="24px">
+      <use href="./images/symbol.svg#icon-menu-close_black"></use>
+    </svg>
+  </button>
+  <h2 class="modal__buytitle">Buy now</h2>
+  <ul class="content">
+    <li class="content__item content__item--icecream">
+      <p class="content__name">ICE CREAM</p>
+      <div class="content__bg content__bg--icecream"></div>
+      <div class="content__img content__img--icecream"></div>
+    </li>
+    <li class="content__item content__item--icecoffee">
+      <p class="content__name">ICE COFFEE</p>
+      <div class="content__bg content__bg--icecoffee"></div>
+      <div class="content__img content__img--icecoffee"></div>
+    </li>
+    <li class="content__item content__item--milkshake">
+      <p class="content__name">MILKSHAKE</p>
+      <div class="content__bg content__bg--milkshake"></div>
+      <div class="content__img content__img--milkshake"></div>
+    </li>
+  </ul>
+  <form class="form">
+    <input
+      type="text"
+      name="name-user"
+      placeholder="Name"
+      required
+      pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+      class="form__input"
+    />
+    <input
+      type="text"
+      name="tel"
+      placeholder="Phone"
+      required
+      pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+      class="form__input"
+    />
+    <textarea
+      name="text"
+      cols="30"
+      rows="10"
+      placeholder="Comment"
+      class="form__input form__input--comment"
+    ></textarea>
+    <button type="submit" class="form__button">Submit</button>
+  </form>
+</div>
+
+<!-- Read More  -->
+
+<div class="modal" data-modal="readmore">
+  <button type="submit" class="modal__close js-modal-close" data-modal-close>
+    <svg width="24px" height="24px">
+      <use href="./images/symbol.svg#icon-menu-close_black"></use>
+    </svg>
+  </button>
+  <h2 class="modal__readtitle">How it’s made?</h2>
+  <div>
+    <iframe
+      width="448"
+      height="205"
+      src="https://www.youtube.com/embed/pqxtkxVbceA"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      style="border-radius: 10px"
+      class="modal__video"
+    ></iframe>
+  </div>
+  <p class="modal__readtext">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et
+  </p>
+</div>
+
+<!-- Our Location -->
+
+<div class="modal" data-modal="ourlocations">
+  <button type="submit" class="modal__close js-modal-close" data-modal-close>
+    <svg width="24px" height="24px">
+      <use href="./images/symbol.svg#icon-menu-close_black"></use>
+    </svg>
+  </button>
+  <h2 class="modal__loctitle">Our Locations</h2>
+  <div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.7929340743044!2d-87.78192918519163!3d41.70340558430846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e39ad302b2c19%3A0xc808e9b14d04eb2b!2s10340%20Ridgeland%20Ave%2C%20Chicago%20Ridge%2C%20IL%2060415%2C%20%D0%A1%D0%A8%D0%90!5e0!3m2!1sru!2sua!4v1673563957678!5m2!1sru!2sua"
+      width="488"
+      height="260"
+      style="border: 0; border-radius: 10px"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      class="modal__map"
+    ></iframe>
+  </div>
+  <button type="button" class="form__button">
+    <a href="https://goo.gl/maps/E5r8N7QFcrYJqA797" class="modal__link">Open map</a>
+  </button>
+</div>
+
+<!-- Franchise  -->
+
+<div class="modal" data-modal="franchise">
+  <button type="submit" class="modal__close js-modal-close" data-modal-close>
+    <svg width="24px" height="24px">
+      <use href="./images/symbol.svg#icon-menu-close_black"></use>
+    </svg>
+  </button>
+  <h2 class="modal__title">Thank you for your interest in owning an Ice Cream shop</h2>
+  <p class="modal__text">
+    Due to the overwhelming volume of franchise requests we are not accepting new franchisee
+    applications at this time. Once the application process resumes, we will contact you for further
+    information. Please fill out the contact information below and we will reach out for additional
+    information. We appreciate your patience.
+  </p>
+  <form class="form">
+    <input
+      type="text"
+      name="name-user"
+      placeholder="Name"
+      required
+      pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+      class="form__input"
+    />
+    <input
+      type="text"
+      name="tel"
+      placeholder="Phone"
+      required
+      pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+      class="form__input"
+    />
+    <input
+      type="text"
+      name="mail"
+      placeholder="Email"
+      required
+      pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+      class="form__input"
+    />
+    <textarea
+      name="text"
+      cols="30"
+      rows="10"
+      placeholder="Comment"
+      class="form__input form__input--comment"
+    ></textarea>
+    <button type="submit" class="form__button">Submit</button>
+  </form>
+</div>
+<div class="overlay is-hidden js-overlay-modal" data-modal></div>
