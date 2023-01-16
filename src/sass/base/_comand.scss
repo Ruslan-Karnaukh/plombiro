@@ -6,4 +6,10 @@ body{
 
 *{
     cursor: url('/src/images/cursor.png'), auto;
+    &:hover button, 
+    &:hover a,  
+    &:hover .close{
+        cursor: url('/src/images/cursor-hover.png'), auto;
+        
+    }
 }
