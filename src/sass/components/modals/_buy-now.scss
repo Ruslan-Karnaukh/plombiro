@@ -70,6 +70,8 @@
   border: 2px solid #96af8c;
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15px;
+
+  transition: var(--cubic);
 }
 
 .content__item--icecream:hover {
@@ -80,6 +82,8 @@
   border: 2px solid #efd478;
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15px;
+
+  transition: var(--cubic);
 }
 
 .content__item--icecoffee:hover {
@@ -90,6 +94,8 @@
   border: 2px solid #d6936d;
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15.7808px;
+
+  transition: var(--cubic);
 }
 
 .content__item--milkshake:hover {

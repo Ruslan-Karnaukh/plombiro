@@ -88,9 +88,16 @@ textarea {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #131313;
+  color: var(--color-base);
+
+  transition: var(--cubic);
 
   @media screen and (max-width: 767px) {
     @include font(600, 14px, 17px, null);
   }
+}
+
+.form__button:hover,
+.form__button:focus {
+  background-color: var(--color-hover);
 }
