@@ -1,6 +1,10 @@
+.contacts.section {
+  height: 1196px;
+}
+
 .contacts__offset-container {
   position: relative;
-  // top: -353px;
+  top: -353px;
 }
 
 .contacts__boxes {
@@ -12,6 +16,7 @@
 }
 
 .contacts__box {
+  width: 100%;
   max-width: 280px;
   padding: 40px 32px 24px 32px;
   background-color: var(--color-focus);
@@ -81,6 +86,10 @@
 
 .contacts__work-schedule-item:not(:last-child) {
   margin-bottom: 8px;
+}
+
+.contacts__tel-email > :not(:last-child) {
+  margin-bottom: 6px;
 }
 
 .contacts__tel-link,
@@ -195,37 +204,75 @@
 
 @include tablet {
   .contacts__box {
-    max-width: 224px;
+    width: 224px;
+    max-width: none;
+    padding: 40px 24px;
   }
   .contacts__boxes {
     margin-bottom: 40px;
+  }
+  .contacts__box-items {
+    gap: 64px;
+  }
+  .contacts__box-item:not(:last-child)::after {
+    bottom: -32px;
+  }
+  .contacts__box-button {
+    height: 30px;
+    margin-bottom: 32px;
+    font-size: 16px;
   }
   .contacts__buttons {
     flex-direction: row;
     justify-content: center;
   }
+  .contacts__tel-email > :not(:last-child) {
+    margin-bottom: 4px;
+  }
   .contacts__offset-container {
     position: relative;
-    // top: -299px;
+    top: -299px;
+  }
+  .contacts.section {
+    padding-bottom: 40px;
+    height: 398px;
   }
 }
 
 @include desktop {
   .contacts__box {
-    max-width: 368px;
+    width: 368px;
+    padding: 40px;
   }
   .contacts__boxes {
     gap: 32px;
     margin-bottom: 60px;
   }
+  .contacts__sub-title {
+    font-size: 16px;
+  }
+  .contacts__address {
+    font-size: 16px;
+  }
+  .contacts__work-schedule-title {
+    font-size: 16px;
+  }
+  .contacts__work-schedule-item {
+    font-size: 16px;
+  }
+  .contacts__work-schedule-item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .contacts__tel-link,
+  .contacts__email-link {
+    font-size: 16px;
+  }
   .contacts__offset-container {
     position: relative;
-    // top: -128px;
+    top: -128px;
+  }
+  .contacts.section {
+    height: 718px;
+    padding-bottom: 120px;
   }
 }
-
-// add colors ro root file:
-// #000000
-// #d6936d
-// #e1e1e1
-// #ABABAB
