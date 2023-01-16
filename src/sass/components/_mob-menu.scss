@@ -48,6 +48,7 @@
   
 }
 .mob__links{
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @include font(700, 32, 39, null);
     color: var(--color-focus);
     &:hover{
@@ -55,9 +56,6 @@
     }
     &:focus{
         color: var(--color-base);
-    }
-    &.is-open {   
-        transform: translateX(0);
     }
 }
 .mob__button--buy{

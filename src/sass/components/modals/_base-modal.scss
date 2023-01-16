@@ -14,7 +14,7 @@ textarea {
   height: 100%;
   background-color: #88bc75cf;
   z-index: 20;
-  transition: 0.3s all;
+  transition: 255mm all var(--cubic);
 }
 
 .overlay.is-hidden {
@@ -45,7 +45,7 @@ textarea {
   border-radius: 10px;
   border: 2px solid var(--color-default);
   background-color: var(--color-focus);
-  transition: 0.3s all;
+  transition: 255mm all var(--cubic);
 
   @media screen and (max-width: 767px) {
     width: 280px;
