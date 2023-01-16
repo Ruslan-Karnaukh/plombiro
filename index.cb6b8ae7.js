@@ -1,0 +1,2 @@
+$(document).ready((function(){$(".slider").slick({dots:!0,adaptiveHeight:!0,speed:3e3,easing:"easeInExpo",autoplay:!0,autoplaySpeed:3e3,pauseOnFocus:!0,pauseOnHover:!0,pauseOnDotsHover:!0,touchThreshold:10,waitForAnimate:!1}),$(".slider").on("beforeChange",(function(e,o,n,a){console.log("currentSlide")})),$(".slider").on("afterChange",(function(e,o,n){console.log("currentSlide")}))}));
+//# sourceMappingURL=index.cb6b8ae7.js.map
