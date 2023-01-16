@@ -1,11 +1,13 @@
 .advantages {
   color: var(--color-focus);
+  padding-bottom: 178px;
 }
 
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
   gap: 32px;
   @media screen and (min-width: 768px) {
     gap: 80px;
@@ -19,6 +21,7 @@
 .advantages__item {
   position: relative;
   display: flex;
+  justify-content: center;  
   width: 230px;
 
   @media screen and (min-width: 768px) {
