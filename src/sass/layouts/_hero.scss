@@ -10,7 +10,6 @@
   @include tablet {
     background-image: url(/src/images/dots-tablet-1x.png);
     background-size: 768px;
-    background-repeat: no-repeat;
     background-position: bottom;
     @include retina {
       background-image: url(/src/images/dots-tablet-2x.png);
@@ -20,8 +19,6 @@
   @include desktop {
     background-image: url(/src/images/dots-desktop-1x.png);
     background-size: 1200px;
-    background-repeat: no-repeat;
-    background-position: bottom;
     @include retina {
       background-image: url(/src/images/dots-desktop-2x.png);
     }
@@ -118,7 +115,7 @@
     @include desktop {
       margin-left: 241px;
       margin-bottom: 24px;
-      width: 200px;
+      width: 235px;
       @include font(400, 14px, 20px, null);
     }
   }
