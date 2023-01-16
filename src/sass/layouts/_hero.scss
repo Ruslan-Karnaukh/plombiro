@@ -63,17 +63,21 @@
   }
 
   &__btn {
+    display: inline-block;
+    padding: 11px 26px;
     margin-right: 12px;
     width: 108px;
     height: 38px;
     color: var(--color-base);
     @include desktop {
+      padding: 12px 34px;
       width: 134px;
       height: 42px;
     }
   }
 
   &__button {
+    display: inline-block;
     width: 100px;
     height: 24px;
     margin-bottom: 46px;
@@ -93,6 +97,7 @@
       height: 24px;
     }
     @include desktop {
+      padding: 12px 21px 11px 22px;
       margin-bottom: 111px;
       width: 154px;
       height: 40px;
