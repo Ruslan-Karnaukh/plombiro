@@ -165,6 +165,13 @@
 
   &__plate {
     display: none;
+    animation-name: puls;
+    animation-duration: 2000ms;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+
     @include tablet {
       position: absolute;
       display: block;
@@ -178,6 +185,20 @@
       height: 225px;
       left: 16px;
       bottom: 65px;
+    }
+
+    @keyframes puls {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(1.2);
+      }
     }
   }
 
