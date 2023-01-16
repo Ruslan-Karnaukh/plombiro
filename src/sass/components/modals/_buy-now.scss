@@ -143,12 +143,21 @@
 
 .content__img--icecream {
   background-image: url(../images/buynow_modal1-1x.png);
+  @include retina {
+    background-image: url(../images/buynow_modal1-2x.png);
+  }
 }
 
 .content__img--icecoffee {
   background-image: url(../images/buynow_modal2-1x.png);
+  @include retina {
+    background-image: url(../images/buynow_modal2-2x.png);
+  }
 }
 
 .content__img--milkshake {
   background-image: url(../images/buynow_modal3-1x.png);
+  @include retina {
+    background-image: url(../images/buynow_modal3-2x.png);
+  }
 }
