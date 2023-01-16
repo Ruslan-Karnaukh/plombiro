@@ -32,7 +32,16 @@
   }
 }
 
-.content__item {
+.content__item:not(:last-child) {
+  margin-right: 32px;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
+    margin-bottom: 85px;
+  }
+}
+
+.content__link {
   position: relative;
 
   width: 132px;
@@ -45,15 +54,6 @@
   @media screen and (max-width: 767px) {
     width: 132px;
     height: 136px;
-  }
-}
-
-.content__item:not(:last-child) {
-  margin-right: 32px;
-
-  @media screen and (max-width: 767px) {
-    margin-right: 0;
-    margin-bottom: 85px;
   }
 }
 
@@ -72,10 +72,12 @@
   border-radius: 15px;
 
   transition: var(--cubic);
-}
 
-.content__item--icecream:hover {
-  background-color: #96af8c;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #96af8c;
+  }
 }
 
 .content__item--icecoffee {
@@ -84,10 +86,12 @@
   border-radius: 15px;
 
   transition: var(--cubic);
-}
 
-.content__item--icecoffee:hover {
-  background-color: #efd478;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #efd478;
+  }
 }
 
 .content__item--milkshake {
@@ -96,10 +100,12 @@
   border-radius: 15.7808px;
 
   transition: var(--cubic);
-}
 
-.content__item--milkshake:hover {
-  background-color: #d6936d;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #d6936d;
+  }
 }
 
 .content__bg {
