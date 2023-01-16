@@ -1,4 +1,4 @@
-const scrollBtn = document.querySelector(".btn");
+const scrollBtn = document.querySelector(".btn-scroll");
 const btnVisibility = () => {
     if (window.scrollY > 400) {
         scrollBtn.style.visibility = "visible";
