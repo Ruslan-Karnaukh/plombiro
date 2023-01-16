@@ -1,15 +1,13 @@
 .section__review {
     padding: 178px 0 393px 0;
     background-image: url(..//images/backgroud_mobile-1x.jpg);
-
     @include retina {
         background-image: url(..//images/backgroud_mobile-2x.jpg);
     }
 
     @include mobile {
-        padding: 257px 0 230px 0;
+        padding: 257px 0 400px 0;
         background-image: url(..//images/backgroud_mobile-1x.jpg);
-
         @include retina {
             background-image: url(..//images/backgroud_mobile-2x.jpg);
         }
@@ -18,7 +16,6 @@
     @include tablet {
         padding: 283px 0 379px 0;
         background-image: url(..//images/background_tablet-1x.jpg);
-
         @include retina {
             background-image: url(..//images/background_tablet-2x.jpg);
         }
@@ -27,11 +24,12 @@
     @include desktop {
         padding: 464px 0 228px 0;
         background-image: url(..//images/backgroud_desktop-1x.jpg);
-
         @include retina {
             background-image: url(..//images/backgroud_desktop-2x.jpg);
         }
     }
+    background-size: cover;
+    background-position: center;
 }
 
 // slider option -------------------
@@ -56,8 +54,6 @@
 // arrows -------------------
 
 .slider .slick-arrow {
-    // position: absolute;
-    // top: 50%;
     z-index: 1;
     width: 5px;
     height: 100%;
@@ -73,7 +69,7 @@
     }
 
     @include tablet {
-        width: 50px;
+        width: 160px;
         height: 100%;
         border: none;
         padding: 100px;
@@ -188,7 +184,7 @@
     }
 
     &:hover {
-        box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.5);
     }
 }
 
