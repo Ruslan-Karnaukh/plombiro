@@ -7,6 +7,16 @@
   top: -353px;
 }
 
+@include mobile {
+  .contacts.section {
+    height: 1192px;
+  }
+  .contacts__offset-container {
+    position: relative;
+    top: -349px;
+  }
+}
+
 .contacts__boxes {
   display: flex;
   flex-wrap: wrap;
