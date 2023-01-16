@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   background-image: url(/src/images/dots-mobile-1x.png);
   background-size: 330px;
   background-repeat: no-repeat;
@@ -25,7 +26,6 @@
   }
 
   &__box {
-    position: relative;
     padding-top: 50px;
     padding-bottom: 236px;
     @include mobile {
@@ -33,12 +33,13 @@
       padding-bottom: 150px;
     }
     @include tablet {
+      position: relative;
       padding-top: 14px;
       padding-bottom: 24px;
     }
     @include desktop {
       padding-top: 45px;
-      padding-bottom: 103px;
+      padding-bottom: 84px;
     }
   }
 
