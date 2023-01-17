@@ -2,10 +2,7 @@
   <div class="container header__box">
     <picture>
       <source
-        srcset="
-          ./images/logo_desktop-1x.png 1x,
-          ./images/logo_desktop-2x.png 2x
-        "
+        srcset="./images/logo_desktop-1x.png 1x, ./images/logo_desktop-2x.png 2x"
         media="(min-width:1200px)"
         type="image/png"
       />
@@ -14,25 +11,21 @@
         media="(max-width:1199px)"
         type="image/png"
       />
-      <img
-        class="header__logo"
-        src="./images/logo-1x.png"
-        alt="Logo ice cream"
-      />
+      <img class="header__logo" src="./images/logo-1x.png" alt="Logo ice cream" />
     </picture>
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Home</a>
+          <a href="./index.html" class="navigation__link">Home</a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">How it’s made?</a>
+          <a href="#about" class="navigation__link">How it’s made?</a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Our products</a>
+          <a href="#products" class="navigation__link">Our products</a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Contact</a>
+          <a href="#contacts" class="navigation__link">Contact</a>
         </li>
       </ul>
     </nav>
@@ -44,14 +37,11 @@
       type="button"
     >
       <svg width="32" height="32" aria-label="Mobile menu button">
-        <use
-          class="menu-button__icon"
-          href="./images/symbol.svg#icon-menu-open"
-        ></use>
+        <use class="menu-button__icon" href="./images/symbol.svg#icon-menu-open"></use>
       </svg>
     </button>
 
-    <button type="button" class="button header__button">
+    <button type="button" class="button header__button js-open-modal" data-modal="buynow">
       Buy now
       <svg width="12" height="12" class="button__item">
         <use href="./images/symbol.svg#icon-button"></use>

@@ -22,7 +22,7 @@
 .btn {
   background-color: transparent;
   color: var(--color-text);
-  @include font(600, 14px, 18px, null);
+  @include font(600, 12px, 15px, null);
   border: 2px solid var(--color-default);
   border-radius: 10px;
   transition: border-color var(--cubic);
@@ -33,5 +33,8 @@
   &:focus {
     border-color: var(--color-hover);
     color: var(--color-focus);
+  }
+  @include desktop {
+    @include font(600, 14px, 18px, null);
   }
 }

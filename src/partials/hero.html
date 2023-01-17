@@ -1,0 +1,90 @@
+<section class="hero">
+  <div class="container hero__box">
+    <h1 class="hero__title animate__animated animate__zoomIn" id="hero">
+      ice cream made with passion
+    </h1>
+    <a class="btn hero__btn" href="#products">Products</a>
+    <a class="hero__button" href="#about">How it’s made?</a>
+
+    <ul class="hero__list">
+      <li class="hero__item">
+        <p class="hero__number">16</p>
+        <p class="hero__name">cafes</p>
+      </li>
+      <li class="hero__item">
+        <p class="hero__number">23</p>
+        <p class="hero__name">food trucks</p>
+      </li>
+    </ul>
+
+    <p class="hero__text">
+      Our ice cream is magic, a fascinating process that turns the purchase of
+      ordinary ice cream into a real adventure, and you are its main character.
+    </p>
+    <!-- <button type="button" class="hero__arrow">
+      <svg width="40" height="16" class="hero__icon">
+        <use href="./images/symbol.svg#icon-arrow"></use>
+      </svg>
+    </button> -->
+
+    <a class="hero__arrow" href="#galery">
+      <svg width="40" height="16" class="hero__icon">
+        <use href="./images/symbol.svg#icon-arrow"></use></svg
+    ></a>
+
+    <picture>
+      <source
+        srcset="
+          ./images/hero_main_desktop-1x.png 1x,
+          ./images/hero_main_desktop-2x.png 2x
+        "
+        media="(min-width:1200px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          ./images/hero_main_tablet-1x.png 1x,
+          ./images/hero_main_tablet-2x.png 2x
+        "
+        media="(min-width:768px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          ./images/hero_main_mobile-1x.png 1x,
+          ./images/hero_main_mobile-2x.png 2x
+        "
+        media="(max-width:767px)"
+        type="image/png"
+      />
+      <img
+        class="hero__image animate__animated animate__zoomIn"
+        src="./images/hero_main_mobile-1x.png"
+        alt="ice cream"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="
+          ./images/hero_plate_desktop-1x.png 1x,
+          ./images/hero_plate_desktop-2x.png 2x
+        "
+        media="(min-width:1200px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          ./images/hero_plate_tablet-1x.png 1x,
+          ./images/hero_plate_tablet-2x.png 2x
+        "
+        media="(min-width:768px)"
+        type="image/png"
+      />
+      <img
+        class="hero__plate animate__animated animate__fadeInBottomLeft"
+        src="./images/hero_plate_desktop-1x.png"
+        alt="plate"
+      />
+    </picture>
+  </div>
+</section>

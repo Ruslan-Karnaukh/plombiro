@@ -1,0 +1,245 @@
+.hero {
+  position: relative;
+  background-image: url(/src/images/dots-mobile-1x.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  @include retina {
+    background-image: url(/src/images/dots-mobile-2x.png);
+  }
+
+  @include mobile {
+    background-size: 330px;
+  }
+
+  @include tablet {
+    background-image: url(/src/images/dots-tablet-1x.png);
+    background-size: 768px;
+    @include retina {
+      background-image: url(/src/images/dots-tablet-2x.png);
+    }
+  }
+
+  @include desktop {
+    background-image: url(/src/images/dots-desktop-1x.png);
+    background-size: 1200px;
+    @include retina {
+      background-image: url(/src/images/dots-desktop-2x.png);
+    }
+  }
+
+  &__box {
+    padding-top: 50px;
+    padding-bottom: 236px;
+    @include mobile {
+      padding-top: 40px;
+      padding-bottom: 150px;
+    }
+    @include tablet {
+      position: relative;
+      padding-top: 14px;
+      padding-bottom: 24px;
+    }
+    @include desktop {
+      padding-top: 45px;
+      padding-bottom: 84px;
+    }
+  }
+
+  &__title {
+    font-family: 'Seymour One';
+    margin-bottom: 32px;
+    width: 247px;
+    @include font(400, 26px, 33px, 0.04em);
+    color: var(--color-focus);
+    text-transform: uppercase;
+    @include tablet {
+      margin-bottom: 24px;
+    }
+    @include desktop {
+      margin-bottom: 28px;
+      width: 367px;
+      @include font(400, 38px, 48px, 0.04em);
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: 11px 26px;
+    margin-right: 12px;
+    width: 108px;
+    height: 38px;
+    color: var(--color-base);
+    @include desktop {
+      padding: 12px 34px;
+      width: 134px;
+      height: 42px;
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    width: 100px;
+    height: 24px;
+    margin-bottom: 46px;
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--color-default);
+    @include font(600, 12px, 15px, null);
+    text-decoration-line: underline;
+    &:hover {
+      color: var(--color-hover);
+    }
+    &:focus {
+      color: var(--color-focus);
+    }
+    @include tablet {
+      width: 114px;
+      height: 24px;
+    }
+    @include desktop {
+      padding: 12px 21px 11px 22px;
+      margin-bottom: 111px;
+      width: 154px;
+      height: 40px;
+      @include font(600, 14px, 17px, null);
+    }
+  }
+
+  &__text {
+    display: none;
+    @include tablet {
+      margin-left: 184px;
+      margin-bottom: 12px;
+      display: block;
+      width: 139px;
+      @include font(400, 12px, 17px, null);
+      color: var(--color-focus);
+    }
+    @include desktop {
+      margin-left: 241px;
+      margin-bottom: 24px;
+      width: 235px;
+      @include font(400, 14px, 20px, null);
+    }
+  }
+
+  &__arrow {
+    display: none;
+    @include tablet {
+      display: block;
+      margin-left: 184px;
+      background-color: transparent;
+      border: none;
+      color: var(--color-focus);
+    }
+
+    @include desktop {
+      margin-left: 241px;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &__image {
+    position: absolute;
+    width: 177px;
+    height: 217px;
+    bottom: 0;
+    right: 60px;
+    @include mobile {
+      width: 218px;
+      height: 267px;
+      bottom: 0;
+      right: 20px;
+    }
+    @include tablet {
+      width: 268px;
+      height: 329px;
+      right: 92px;
+    }
+    @include desktop {
+      width: 456px;
+      height: 560px;
+    }
+  }
+
+  &__plate {
+    display: none;
+    animation-name: puls;
+    animation-duration: 2000ms;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+
+    @include tablet {
+      position: absolute;
+      display: block;
+      width: 152px;
+      height: 152px;
+      left: 32px;
+      bottom: 12px;
+    }
+    @include desktop {
+      width: 225px;
+      height: 225px;
+      left: 16px;
+      bottom: 65px;
+    }
+
+    @keyframes puls {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__list {
+    display: none;
+    @include tablet {
+      position: absolute;
+      top: 28px;
+      right: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    @include desktop {
+      top: 53px;
+      right: 16px;
+      gap: 16px;
+    }
+  }
+
+  &__item {
+    text-align: right;
+  }
+
+  &__number {
+    @include font(900, 28px, 34px, 0.04em);
+    color: var(--color-base);
+    text-transform: uppercase;
+    @include desktop {
+      @include font(900, 46px, 56px, 0.04em);
+    }
+  }
+
+  &__name {
+    @include font(400, 8px, 10px, null);
+    color: var(--color-focus);
+    @include desktop {
+      @include font(400, 14px, 17px, null);
+    }
+  }
+}

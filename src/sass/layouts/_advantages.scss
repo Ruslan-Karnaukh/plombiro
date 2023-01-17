@@ -1,11 +1,13 @@
 .advantages {
   color: var(--color-focus);
+  padding-bottom: 178px;
 }
 
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   gap: 32px;
   @media screen and (min-width: 768px) {
     gap: 80px;
@@ -19,6 +21,7 @@
 .advantages__item {
   position: relative;
   display: flex;
+  justify-content: center;
   width: 230px;
 
   @media screen and (min-width: 768px) {
@@ -112,5 +115,32 @@
 
   @media screen and (min-width: 1200px) {
     @include font(400, 16px, 28px, 0.02em);
+  }
+}
+
+.item-cow:hover,
+.item-weight:hover,
+.item-ice:hover {
+  transform: scale(1.03);
+  transition: 250ms;
+  &:after,
+  &:hover:before {
+    animation: advantages 2000ms ease infinite;
+  }
+}
+
+@keyframes advantages {
+  0%,
+  20%,
+  50%,
+  70%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+  30% {
+    transform: translate(-50%, 20px);
+  }
+  50% {
+    transform: translate(-50%, 10px);
   }
 }

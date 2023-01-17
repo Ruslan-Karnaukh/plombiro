@@ -1,0 +1,40 @@
+.modal__loctitle {
+  font-family: 'Seymour One';
+  @include font(400, 20px, 28px, null);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  margin-bottom: 32px;
+
+  color: var(--color-base);
+
+  @media screen and (max-width: 767px) {
+    @include font(400, 16px, 24px, null);
+
+    margin-bottom: 20px;
+  }
+}
+
+.modal__map {
+  margin-bottom: 32px;
+
+  @media screen and (max-width: 767px) {
+    width: 224px;
+    height: 199px;
+
+    margin-bottom: 24px;
+  }
+}
+
+.modal__link {
+  @include font(600, 14px, 17px, null);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #131313;
+}
