@@ -32,6 +32,11 @@
   background-color: var(--color-focus);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+  transition: transform 300ms linear;
+}
+
+.contacts__box:hover {
+  transform: scale(1.1);
 }
 
 .contacts__box-item {
