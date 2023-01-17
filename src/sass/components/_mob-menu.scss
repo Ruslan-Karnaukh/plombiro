@@ -12,6 +12,9 @@
     &.is-open{   
         transform: translateX(0);
     }
+    &.fa-times{
+        transform: translateX(100%);
+    }
     @media screen and(min-width: 1200px) {
         display: none;
     }
