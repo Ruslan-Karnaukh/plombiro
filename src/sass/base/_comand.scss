@@ -12,4 +12,7 @@ body{
         cursor: url('/src/images/cursor-hover.png'), auto;
         
     }
+    &:focus{
+        outline: none;
+    }
 }
