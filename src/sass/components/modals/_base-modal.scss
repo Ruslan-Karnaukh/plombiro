@@ -2,7 +2,6 @@ textarea {
   resize: none;
 }
 
-
 .overlay {
   /* Скрываем подложку  */
   opacity: 0;
@@ -47,6 +46,7 @@ textarea {
   border: 2px solid var(--color-default);
   background-color: var(--color-focus);
   transition: all var(--cubic);
+  transform: translate(-50%, -50%) scale(1) rotate(0);
 
   @media screen and (max-width: 767px) {
     width: 280px;
@@ -54,7 +54,14 @@ textarea {
     overflow-y: scroll;
   }
 }
-
+.overlay.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0) rotate(-180deg);
+  border-radius: 50%;
+}
+.overlay.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0) rotate(-180deg);
+  border-radius: 50%;
+}
 /* Стили для активных классов подложки и окна */
 
 .modal.active,
@@ -75,8 +82,8 @@ textarea {
   background: transparent;
   border-radius: 50%;
   border: transparent;
-  transition: fill var(--cubic) ;
-  &:hover{
+  transition: fill var(--cubic);
+  &:hover {
     fill: rgba(93, 143, 118, 0.419);
   }
 }
