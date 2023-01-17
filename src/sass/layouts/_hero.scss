@@ -1,17 +1,20 @@
 .hero {
   position: relative;
   background-image: url(/src/images/dots-mobile-1x.png);
-  background-size: 330px;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: bottom;
   @include retina {
     background-image: url(/src/images/dots-mobile-2x.png);
+  }
+
+  @include mobile {
+    background-size: 330px;
   }
 
   @include tablet {
     background-image: url(/src/images/dots-tablet-1x.png);
     background-size: 768px;
-    background-position: bottom;
     @include retina {
       background-image: url(/src/images/dots-tablet-2x.png);
     }
