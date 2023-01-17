@@ -29,6 +29,7 @@
     display: none;
     @include tablet {
       position: relative;
+      padding: 12px 34px;
       @include flex-align-justify;
       margin-left: auto;
       width: 152px;
