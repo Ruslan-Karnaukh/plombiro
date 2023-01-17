@@ -30,6 +30,9 @@
 }
 
 .modal__link {
+  width: 145px;
+
+  display: block;
   @include font(600, 14px, 17px, null);
 
   display: flex;
