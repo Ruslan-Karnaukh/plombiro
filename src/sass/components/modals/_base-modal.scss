@@ -52,6 +52,21 @@ textarea {
     width: 280px;
     height: 90%;
     overflow-y: scroll;
+    &.modal__readmore{
+      height: 459px;
+    }
+  }
+}
+.modal.modal__readmore{
+@media screen and (max-width: 767px) {
+    height: 459px;
+    overflow: hidden;
+  }
+}
+.modal.modal__ourlocations{
+  @media screen and (max-width: 767px) {
+    height: 365px;
+    overflow: hidden;
   }
 }
 .overlay.is-hidden .modal {
@@ -114,4 +129,9 @@ textarea {
 .form__button:hover,
 .form__button:focus {
   background-color: var(--color-hover);
+}
+
+.modal-block{
+  width: 568px;
+  height: 996px;
 }
