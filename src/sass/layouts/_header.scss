@@ -29,7 +29,7 @@
     display: none;
     @include tablet {
       position: relative;
-      display: block;
+      @include flex-align-justify;
       margin-left: auto;
       width: 152px;
       height: 42px;
