@@ -89,6 +89,7 @@
     color: var(--color-default);
     @include font(600, 12px, 15px, null);
     text-decoration-line: underline;
+    transition: color var(--cubic);
     &:hover {
       color: var(--color-hover);
     }
@@ -108,41 +109,50 @@
     }
   }
 
-  &__text {
+  &__thumb {
     display: none;
     @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
       margin-left: 184px;
-      margin-bottom: 12px;
-      display: block;
+      color: var(--color-focus);
+      @include tablet {
+        gap: 24px;
+        margin-left: 241px;
+      }
+    }
+  }
+
+  &__text {
+    @include tablet {
       width: 139px;
       @include font(400, 12px, 17px, null);
-      color: var(--color-focus);
     }
     @include desktop {
-      margin-left: 241px;
-      margin-bottom: 24px;
       width: 235px;
       @include font(400, 14px, 20px, null);
     }
   }
 
   &__arrow {
-    display: none;
-    @include tablet {
-      display: block;
-      margin-left: 184px;
-      background-color: transparent;
-      border: none;
-      color: var(--color-focus);
-    }
-
-    @include desktop {
-      margin-left: 241px;
-    }
+    background-color: transparent;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   &__icon {
     fill: currentColor;
+    transition: fill var(--cubic), transform 300ms linear;
+    &:hover {
+      fill: var(--color-default);
+      transform: scale(1.2);
+    }
+    &:focus {
+      fill: var(--color-default);
+      transform: scale(1.2);
+    }
   }
 
   &__image {
@@ -150,7 +160,8 @@
     width: 177px;
     height: 217px;
     bottom: 0;
-    right: 60px;
+    right: 50%;
+    transform: translateX(50%);
     @include mobile {
       width: 218px;
       height: 267px;
