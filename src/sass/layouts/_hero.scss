@@ -32,19 +32,19 @@
 
   &__box {
     padding-top: 50px;
-    padding-bottom: 236px;
+    padding-bottom: 226px;
     @include mobile {
       padding-top: 40px;
-      padding-bottom: 150px;
+      padding-bottom: 140px;
     }
     @include tablet {
       position: relative;
       padding-top: 14px;
-      padding-bottom: 24px;
+      padding-bottom: 14px;
     }
     @include desktop {
       padding-top: 45px;
-      padding-bottom: 84px;
+      padding-bottom: 74px;
     }
   }
 
@@ -65,10 +65,18 @@
     }
   }
 
+  &__buttons {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 46px;
+    @include desktop {
+      margin-bottom: 111px;
+    }
+  }
+
   &__btn {
-    display: inline-block;
     padding: 11px 26px;
-    margin-right: 12px;
     width: 108px;
     height: 38px;
     color: var(--color-base);
@@ -80,10 +88,8 @@
   }
 
   &__button {
-    display: inline-block;
     width: 100px;
     height: 24px;
-    margin-bottom: 46px;
     background-color: transparent;
     border-color: transparent;
     color: var(--color-default);
@@ -102,7 +108,6 @@
     }
     @include desktop {
       padding: 12px 21px 11px 22px;
-      margin-bottom: 111px;
       width: 154px;
       height: 40px;
       @include font(600, 14px, 17px, null);
@@ -114,23 +119,23 @@
     @include tablet {
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      margin-left: 184px;
+      gap: 2px;
+      margin-left: 186px;
+      width: 140px;
       color: var(--color-focus);
-      @include tablet {
-        gap: 24px;
-        margin-left: 241px;
-      }
+    }
+    @include desktop {
+      gap: 14px;
+      margin-left: 245px;
+      width: 235px;
     }
   }
 
   &__text {
     @include tablet {
-      width: 139px;
       @include font(400, 12px, 17px, null);
     }
     @include desktop {
-      width: 235px;
       @include font(400, 14px, 20px, null);
     }
   }
@@ -139,8 +144,8 @@
     background-color: transparent;
     color: var(--color-focus);
     border: none;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   &__icon {
