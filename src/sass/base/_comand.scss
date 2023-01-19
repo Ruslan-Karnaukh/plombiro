@@ -1,18 +1,19 @@
-body{
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--color-bg) ;    
+body {
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--color-bg);
 }
 
-*{
-    cursor: url('/src/images/cursor.png'), auto;
-    &:hover button, 
-    &:hover a,  
-    &:hover .close{
-        cursor: url('/src/images/cursor-hover.png'), auto;
-        
-    }
-    &:focus{
-        outline: none;
-    }
+* {
+  cursor: url('/src/images/cursor.png'), auto;
+  &:hover button,
+  &:hover a,
+  &:hover a>svg,
+  &:hover a>svg>use,
+  &:hover .close {
+    cursor: url('/src/images/cursor-hover.png'), auto;
+  }
+  &:focus {
+    cursor: url('/src/images/cursor-hover.png'), auto;
+  }
 }
