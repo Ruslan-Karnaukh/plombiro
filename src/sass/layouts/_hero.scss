@@ -137,6 +137,7 @@
 
   &__arrow {
     background-color: transparent;
+    color: var(--color-focus);
     border: none;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -167,6 +168,7 @@
       height: 267px;
       bottom: 0;
       right: 20px;
+      transform: none;
     }
     @include tablet {
       width: 268px;
