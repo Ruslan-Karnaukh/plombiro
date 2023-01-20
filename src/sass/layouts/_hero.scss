@@ -32,19 +32,19 @@
 
   &__box {
     padding-top: 50px;
-    padding-bottom: 236px;
+    padding-bottom: 226px;
     @include mobile {
       padding-top: 40px;
-      padding-bottom: 150px;
+      padding-bottom: 140px;
     }
     @include tablet {
       position: relative;
       padding-top: 14px;
-      padding-bottom: 24px;
+      padding-bottom: 14px;
     }
     @include desktop {
       padding-top: 45px;
-      padding-bottom: 84px;
+      padding-bottom: 74px;
     }
   }
 
@@ -65,10 +65,18 @@
     }
   }
 
+  &__buttons {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 46px;
+    @include desktop {
+      margin-bottom: 111px;
+    }
+  }
+
   &__btn {
-    display: inline-block;
     padding: 11px 26px;
-    margin-right: 12px;
     width: 108px;
     height: 38px;
     color: var(--color-base);
@@ -80,15 +88,14 @@
   }
 
   &__button {
-    display: inline-block;
     width: 100px;
     height: 24px;
-    margin-bottom: 46px;
     background-color: transparent;
     border-color: transparent;
     color: var(--color-default);
     @include font(600, 12px, 15px, null);
     text-decoration-line: underline;
+    transition: color var(--cubic);
     &:hover {
       color: var(--color-hover);
     }
@@ -101,48 +108,57 @@
     }
     @include desktop {
       padding: 12px 21px 11px 22px;
-      margin-bottom: 111px;
       width: 154px;
       height: 40px;
       @include font(600, 14px, 17px, null);
     }
   }
 
-  &__text {
+  &__thumb {
     display: none;
     @include tablet {
-      margin-left: 184px;
-      margin-bottom: 12px;
-      display: block;
-      width: 139px;
-      @include font(400, 12px, 17px, null);
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      margin-left: 186px;
+      width: 140px;
       color: var(--color-focus);
     }
     @include desktop {
-      margin-left: 241px;
-      margin-bottom: 24px;
+      gap: 14px;
+      margin-left: 245px;
       width: 235px;
+    }
+  }
+
+  &__text {
+    @include tablet {
+      @include font(400, 12px, 17px, null);
+    }
+    @include desktop {
       @include font(400, 14px, 20px, null);
     }
   }
 
   &__arrow {
-    display: none;
-    @include tablet {
-      display: block;
-      margin-left: 184px;
-      background-color: transparent;
-      border: none;
-      color: var(--color-focus);
-    }
-
-    @include desktop {
-      margin-left: 241px;
-    }
+    background-color: transparent;
+    color: var(--color-focus);
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   &__icon {
     fill: currentColor;
+    transition: fill var(--cubic), transform 300ms linear;
+    &:hover {
+      fill: var(--color-default);
+      transform: scale(1.2);
+    }
+    &:focus {
+      fill: var(--color-default);
+      transform: scale(1.2);
+    }
   }
 
   &__image {
@@ -150,12 +166,14 @@
     width: 177px;
     height: 217px;
     bottom: 0;
-    right: 60px;
+    right: 50%;
+    transform: translateX(50%);
     @include mobile {
       width: 218px;
       height: 267px;
       bottom: 0;
       right: 20px;
+      transform: none;
     }
     @include tablet {
       width: 268px;
