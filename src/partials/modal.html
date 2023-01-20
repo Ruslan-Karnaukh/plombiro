@@ -33,13 +33,23 @@
   <form class="form">
     <input
       type="text"
-      name="name-user"
+      name="username"
+      title="Please enter your first and last name, e.g. John Brown"
       placeholder="Name"
       required
-      pattern="^[a-zA-Z]+$"
+      pattern="^[a-zA-Z а-яА-Я]+\s[a-zA-Z а-яА-Я]+$"
       class="form__input"
     />
-    <input type="tel" name="tel" placeholder="Phone" required class="form__input" />
+    <input
+      type="tel"
+      name="phone"
+      title="Please enter the phone number according to the example +380123456789"
+      placeholder="Phone"
+      required
+      pattern="[\+]\d{3}\d{2}\d{3}\d{2}\d{2}"
+      class="form__input"
+      minlength="13"
+    />
     <textarea
       name="text"
       cols="30"
@@ -62,7 +72,6 @@
   <h2 class="modal__readtitle">How it’s made?</h2>
   <div>
     <iframe
-      frameborder="0"
       width="448"
       height="205"
       src="https://www.youtube.com/embed/jHuGLNlET3o"
@@ -92,7 +101,6 @@
   <h2 class="modal__loctitle">Our Locations</h2>
   <div>
     <iframe
-      frameborder="0"
       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10167.465355378507!2d30.5340837!3d50.4249619!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa1f7c65300bebad1!2zR29JVCB8IElUINCa0YPRgNGB0LggfCBJVCDQvtGB0LLRltGC0LAg0L7QvdC70LDQudC9!5e0!3m2!1sru!2sua!4v1673903938156!5m2!1sru!2sua"
       width="488"
       height="260"
@@ -125,14 +133,31 @@
   <form class="form">
     <input
       type="text"
-      name="name-user"
+      name="username"
+      title="Please enter your first and last name, e.g. John Brown"
       placeholder="Name"
       required
-      pattern="^[a-zA-Z]+$"
+      pattern="^[a-zA-Z а-яА-Я]+\s[a-zA-Z а-яА-Я]+$"
       class="form__input"
     />
-    <input type="tel" name="tel" placeholder="Phone" required class="form__input" />
-    <input type="email" name="mail" placeholder="Email" required class="form__input" />
+    <input
+      type="tel"
+      name="phone"
+      title="Please enter the phone number according to the example +380123456789"
+      placeholder="Phone"
+      required
+      pattern="[\+]\d{3}\d{2}\d{3}\d{2}\d{2}"
+      minlength="13"
+      class="form__input"
+    />
+    <input
+      type="email"
+      name="mail"
+      placeholder="Email"
+      required
+      pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+      class="form__input"
+    />
     <textarea
       name="text"
       cols="30"
@@ -208,15 +233,25 @@
 
   <form class="form-products">
     <input
-      class="form-products__user"
+      class="form__input"
       type="text"
-      name="name"
+      name="username"
+      title="Please enter your first and last name, e.g. John Brown"
       placeholder="Name"
       required
-      pattern="^[a-zA-Z]"
+      pattern="^[a-zA-Z а-яА-Я]+\s[a-zA-Z а-яА-Я]+$"
     />
 
-    <input class="form-products__user" type="tel" name="phone" placeholder="Phone" required />
+    <input
+      class="form__input"
+      type="tel"
+      name="phone"
+      title="Please enter the phone number according to the example +380123456789"
+      placeholder="Phone"
+      required
+      pattern="[\+]\d{3}\d{2}\d{3}\d{2}\d{2}"
+      minlength="13"
+    />
 
     <textarea class="form-products__coments" name="text" rows="10" placeholder="Comment"></textarea>
 
@@ -288,15 +323,25 @@
 
   <form class="form-products">
     <input
-      class="form-products__user"
+      class="form__input"
       type="text"
-      name="name"
+      name="username"
+      title="Please enter your first and last name, e.g. John Brown"
       placeholder="Name"
       required
-      pattern="^[a-zA-Z]"
+      pattern="^[a-zA-Z а-яА-Я]+\s[a-zA-Z а-яА-Я]+$"
     />
 
-    <input class="form-products__user" type="tel" name="phone" placeholder="Phone" required />
+    <input
+      class="form__input"
+      type="tel"
+      name="phone"
+      title="Please enter the phone number according to the example +380123456789"
+      placeholder="Phone"
+      required
+      pattern="[\+]\d{3}\d{2}\d{3}\d{2}\d{2}"
+      minlength="13"
+    />
 
     <textarea class="form-products__coments" name="text" rows="10" placeholder="Comment"></textarea>
 
@@ -368,15 +413,25 @@
 
   <form class="form-products">
     <input
-      class="form-products__user"
+      class="form__input"
       type="text"
-      name="name"
+      name="username"
+      title="Please enter your first and last name, e.g. John Brown"
       placeholder="Name"
       required
-      pattern="^[a-zA-Z]"
+      pattern="^[a-zA-Z а-яА-Я]+\s[a-zA-Z а-яА-Я]+$"
     />
 
-    <input class="form-products__user" type="tel" name="phone" placeholder="Phone" required />
+    <input
+      class="form__input"
+      type="tel"
+      name="phone"
+      title="Please enter the phone number according to the example +380123456789"
+      placeholder="Phone"
+      required
+      pattern="[\+]\d{3}\d{2}\d{3}\d{2}\d{2}"
+      minlength="13"
+    />
 
     <textarea class="form-products__coments" name="text" rows="10" placeholder="Comment"></textarea>
 
