@@ -1,5 +1,4 @@
 .content__bg {
-  position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -34,7 +33,6 @@
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
-    align-items: center;
 
     margin-bottom: 32px;
   }
@@ -51,6 +49,7 @@
 
   @media screen and (max-width: 767px) {
     margin-bottom: 82px;
+    margin-right: 0;
   }
 }
 
@@ -172,6 +171,8 @@
   width: 132px;
   height: 132px;
 
+  display: block;
+
   cursor: pointer;
 
   border-radius: 98px;
@@ -181,6 +182,7 @@
   background-image: url(../images/buynow_modal1-1x.png);
   @include retina {
     background-image: url(../images/buynow_modal1-2x.png);
+    background-size: 132px 132px;
   }
 }
 
@@ -188,6 +190,7 @@
   background-image: url(../images/buynow_modal2-1x.png);
   @include retina {
     background-image: url(../images/buynow_modal2-2x.png);
+    background-size: 132px 132px;
   }
 }
 
@@ -195,5 +198,6 @@
   background-image: url(../images/buynow_modal3-1x.png);
   @include retina {
     background-image: url(../images/buynow_modal3-2x.png);
+    background-size: 132px 132px;
   }
 }
