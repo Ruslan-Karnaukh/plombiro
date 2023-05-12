@@ -1,7 +1,7 @@
 {
   "name": "plombiro",
   "version": "2.0.0",
-  "description": "",
+  "description": "plombiro",
   "homepage": "https://Ruslan-Karnaukh.github.io/plombiro",
   "scripts": {
     "start": "parcel src/*.html",
